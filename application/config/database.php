@@ -75,9 +75,9 @@ $query_builder = TRUE;
 //ini koneksi buat aslinya
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'Driver={ODBC Driver 17 for SQL Server};Server=192.168.1.101,1433;Database=dbkoneksi;',
-	'username' => 'userptsp',
-	'password' => 'ptsp@2019',
+	'hostname' => 'Driver={ODBC Driver 17 for SQL Server};Server=192.168.30.2,1433;Database=dismart;',
+	'username' => 'sa',
+	'password' => '1945#SQLh3ll0dismart',
 	'database' => '',
 	'dbdriver' => 'odbc',
 	'dbprefix' => '',
