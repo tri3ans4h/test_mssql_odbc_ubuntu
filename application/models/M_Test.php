@@ -19,7 +19,7 @@ class M_Test extends CI_Model {
                 //array_push($errorMsg, 'Query ERROR ' . $this->db->_error_message());
                 $output['respon_code'] = "NOT OK";
             } else {
-                $$output['data'] = $res->result();
+                $output['data'] = $res->result();
 			}
 			return $output;
 
