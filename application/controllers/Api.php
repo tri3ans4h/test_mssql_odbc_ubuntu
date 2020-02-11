@@ -20,7 +20,16 @@ class Api extends REST_Controller {
 
 </html>';
     }
-  
+      function test_get() {
+   $this->load->model('M_Test');
+        $data_in = $this->get();
+        $result = $this->M_Test->TestKoneksi($data_in);
+        if ($result) {
+            $this->response($result, 200);
+        } else {
+            $this->response(array('error' => 'User could not be found'), 404);
+        }
+    }
     function GetPTSP_post() {//INI POST< PAKE POSTMAN BUAT CEK
         $this->load->model('M_PTSPService');
         $data_in = $this->post();
