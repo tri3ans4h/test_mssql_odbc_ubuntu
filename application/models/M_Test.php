@@ -3,7 +3,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class M_PTSPService extends CI_Model {
+class M_Test extends CI_Model {
 	
 	function TestKoneksi(){
 			header("Content-Type: application/json");
